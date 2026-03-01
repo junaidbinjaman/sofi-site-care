@@ -3,7 +3,7 @@
 import {useState} from 'react';
 import {navigation} from '@/lib/navigation';
 import Link from 'next/link';
-import DashboardNavItem from '@/components/DashboardNavItem/DashboardNavItem';
+import DashboardNavItem from '@/components/dashboardNavItem/DashboardNavItem';
 
 type Props = {
     children: React.ReactNode;
@@ -20,7 +20,6 @@ export default function AppSidebar({children}: Props) {
         <>
             <div>
                 <div className='hidden lg:fixed lg:inset-y-0 lg:z-50 lg:flex lg:w-72 lg:flex-col dark:bg-gray-900'>
-                    {/* Sidebar component, swap this element with another sidebar if you like */}
                     <div className='flex grow flex-col gap-y-5 overflow-y-auto border-r border-gray-200 bg-white px-6 dark:border-white/10 dark:bg-black/10'>
                         <div className='flex h-16 shrink-0 items-center'>
                             <Link href='/'>
