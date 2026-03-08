@@ -1,45 +1,37 @@
-# Vitest
+# Sofi Site-Care
 
-This example shows how to use [Vitest](https://github.com/vitest-dev/vitest) with Next.js.
+Sofi Site-Care is a modern **React + Laravel dashboard** designed to help agencies manage, monitor, and maintain web applications developed for their clients. It provides a centralized interface to keep track of client projects, site status, and maintenance activities efficiently.
 
-This includes Next.js' built-in support for Global CSS, CSS Modules and TypeScript. This example also shows how to use Vitest with the App Router and React Server Components.
+The goal of Sofi Site-Care is to simplify the operational workflow of agencies that build **Laravel and React applications**, making it easier to organize projects and provide professional maintenance services.
 
-> **Note:** Since tests can be co-located alongside other files inside the App Router, we have placed those tests in `app/` to demonstrate this behavior (which is different than `pages/`). You can still place all tests in `__tests__` if you prefer.
+---
 
-## Deploy your own
+## ✨ Features
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-vitest&project-name=with-vitest&repository-name=with-vitest)
+- Centralized dashboard for managing client web applications
+- Track and organize multiple client projects
+- Monitor application status and maintenance activities
+- Clean and modern interface built with React
+- Secure and scalable backend powered by Laravel
+- Designed for agency workflows and internal operations
 
-## How to use
+---
 
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init), [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/), or [pnpm](https://pnpm.io) to bootstrap the example:
+## 🧰 Tech Stack
 
-```bash
-npx create-next-app --example with-vitest with-vitest-app
-```
+**Frontend**
+- React
+- TypeScript
+- Vite
 
-```bash
-yarn create next-app --example with-vitest with-vitest-app
-```
+**Backend**
+- Laravel
+- REST API
 
-```bash
-pnpm create next-app --example with-vitest with-vitest-app
-```
+**Other Tools**
+- Git & GitHub
+- Modern component-based architecture
 
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+---
 
-## Running Tests
-
-```bash
-npm test
-```
-
-```bash
-yarn test
-```
-
-```bash
-pnpm test
-```
-
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+## 📦 Project Structure
