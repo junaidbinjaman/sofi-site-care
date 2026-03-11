@@ -1,20 +1,20 @@
-@import "tailwindcss";
-@import "tw-animate-css";
-@import "shadcn/tailwind.css";
+@import 'tailwindcss';
+@import 'tw-animate-css';
+@import 'shadcn/tailwind.css';
 
 @custom-variant dark (&:is(.dark *));
 
 :root {
-    --background: oklch(1 0 0);
+    --background: oklch(0.966 0.003 264);
     --foreground: oklch(0.145 0 0);
     --card: oklch(1 0 0);
     --card-foreground: oklch(0.145 0 0);
     --popover: oklch(1 0 0);
     --popover-foreground: oklch(0.145 0 0);
-    --primary: #223591;
+    --primary: oklch(0.56 0.27 285);
     --primary-foreground: oklch(0.985 0 0);
-    --secondary: #b97ceb;
-    --secondary-foreground: oklch(0.205 0 0);
+    --secondary: oklch(0.4 0.3 260);
+    --secondary-foreground: oklch(0.554 0.021 264);
     --muted: oklch(0.97 0 0);
     --muted-foreground: oklch(0.556 0 0);
     --accent: oklch(0.97 0 0);
@@ -37,6 +37,10 @@
     --sidebar-accent-foreground: oklch(0.205 0 0);
     --sidebar-border: oklch(0.922 0 0);
     --sidebar-ring: oklch(0.708 0 0);
+
+    /* Added by Junaid */
+    --success: oklch(0.69 0.17 158);
+    --success-foreground: oklch(0.985 0 0);
 }
 
 .dark {
@@ -46,9 +50,9 @@
     --card-foreground: oklch(0.985 0 0);
     --popover: oklch(0.205 0 0);
     --popover-foreground: oklch(0.985 0 0);
-    --primary: #4F6BFF;
+    --primary: #4f6bff;
     --primary-foreground: oklch(0.205 0 0);
-    --secondary: #C998F3;
+    --secondary: #c998f3;
     --secondary-foreground: oklch(0.985 0 0);
     --muted: oklch(0.269 0 0);
     --muted-foreground: oklch(0.708 0 0);
@@ -71,6 +75,10 @@
     --sidebar-accent-foreground: oklch(0.985 0 0);
     --sidebar-border: oklch(1 0 0 / 10%);
     --sidebar-ring: oklch(0.556 0 0);
+
+    /* Added by Junaid */
+    --success: oklch(0.69 0.17 158);
+    --success-foreground: oklch(0.205 0 0);
 }
 
 @theme inline {
@@ -113,16 +121,28 @@
     --radius-2xl: calc(var(--radius) * 1.8);
     --radius-3xl: calc(var(--radius) * 2.2);
     --radius-4xl: calc(var(--radius) * 2.6);
+
+      /* Added by Junaid */
+      --color-success: var(--success);
+      --color-success-foreground: var(--success-foreground);
 }
 
 @layer base {
-  * {
-    @apply border-border outline-ring/50;
+    * {
+        @apply border-border outline-ring/50;
     }
-  body {
-    @apply bg-background text-foreground;
+    body {
+        @apply bg-background text-foreground;
     }
-  html {
-    @apply font-sans;
+    html {
+        @apply font-sans;
     }
+}
+
+@utility bg-primary-gradient {
+  background: linear-gradient(90deg, var(--primary) 0%, var(--secondary) 100%);
+}
+
+@utility primary-shadow {
+  box-shadow: 0 1px 3px 0 #DDD6FF, 0 1px 2px -1px #DDD6FF;
 }

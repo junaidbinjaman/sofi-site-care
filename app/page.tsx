@@ -1,18 +1,22 @@
 import {TypographyH1} from '@/components/typography/TypographyH1';
 import DashboardMeta from './_components/DashboardMeta';
+import Navbar from './_components/Navbar';
+import Example from './_components/Example';
+import Card from './_components/Card';
 
 export const metadata = {
-    title: 'App Router',
-    description:
-        'App Router is the new file-based router in Next.js 13. It provides a more intuitive and powerful way to define routes and layouts in your application.',
+    title: 'Dashboard - Website Overview',
+    description: 'Provide an overview of your blogging activity',
 };
 
 export default function Page() {
-
     return (
         <section>
+            <Navbar />
             <TypographyH1>Dashboard</TypographyH1>
             <DashboardMeta />
+            <Example />
+            <Card className="mt-10" />
         </section>
     );
 }

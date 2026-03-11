@@ -4,7 +4,7 @@ type Props = {
 
 export function TypographyP({children}: Props) {
   return (
-    <p className="leading-7 [&:not(:first-child)]:mt-6">
+    <p className="[&:not(:first-child)]:mt-6 text-slate-600">
       {children}
     </p>
   )
