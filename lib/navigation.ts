@@ -13,9 +13,9 @@ export type NavItem = {
 }
 
 export const navigation = [
-  { name: 'Dashboard', href: '/', icon: TbLayoutDashboard, current: true },
-  { name: 'Blogs', href: '/blogs', icon: IoNewspaperOutline, current: false },
-  { name: 'Authors', href: '/author', icon: LuUsersRound, current: false },
-  { name: 'Reviews', href: '/reviews', icon: LuStar, current: false },
-  { name: 'Contacts', href: '/contact', icon: HiOutlineEnvelope, current: false },
+  { name: 'Dashboard', href: '/', icon: TbLayoutDashboard, description: 'Overview & insights', current: true },
+  { name: 'Blogs', href: '/blogs', icon: IoNewspaperOutline, description: 'Manage blog post', current: false },
+  { name: 'Authors', href: '/author', icon: LuUsersRound, description: 'Manage authors', current: false },
+  { name: 'Reviews', href: '/reviews', icon: LuStar, description: 'Manage reviews', current: false },
+  { name: 'Contacts', href: '/contact', icon: HiOutlineEnvelope, description: 'Check user contacts', current: false },
 ]

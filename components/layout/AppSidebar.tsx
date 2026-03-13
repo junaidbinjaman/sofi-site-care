@@ -5,6 +5,8 @@ import {navigation} from '@/lib/navigation';
 import Link from 'next/link';
 import DashboardNavItem from '@/components/dashboardNavItem/DashboardNavItem';
 import {LayoutGroup} from 'motion/react';
+import Header from './Header';
+import Footer from './Footer';
 
 type Props = {
     children: React.ReactNode;
@@ -77,8 +79,10 @@ export default function AppSidebar({children}: Props) {
                 </div>
             </div>
 
-            <main className='py-10 lg:pl-72'>
-                <div className='px-4 sm:px-6 lg:px-8'>{children}</div>
+            <main className='min-h-screen  lg:pl-72 flex flex-col '>
+                <Header />
+                <div className='w-full max-w-6xl px-5 mx-auto flex-1'>{children}</div>
+                <Footer />
             </main>
         </div>
     );
