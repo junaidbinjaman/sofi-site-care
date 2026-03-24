@@ -1,10 +1,13 @@
+import { cn } from "@/lib/utils"
+
 type Props = {
     children: React.ReactNode;
+    className?: string;
 }
 
-export function TypographyBlockquote({children}: Props) {
+export function TypographyBlockquote({children, className}: Props) {
   return (
-    <blockquote className="mt-6 border-l-2 pl-6 italic">
+    <blockquote className={cn("mt-6 border-l-2 pl-6 italic", className)}>
       {children}
     </blockquote>
   )

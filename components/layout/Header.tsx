@@ -96,7 +96,7 @@ function Header() {
                                         if (el.name === 'Dashboard') return;
                                         return (
                                             <DropdownMenuItem>
-                                                <Link href='/blogs'>
+                                                <Link href={el.href}>
                                                     <motion.div
                                                         whileHover={{x: 2}}
                                                         className='flex items-center gap-3 w-full py-2'
